@@ -3,7 +3,9 @@
 /**
  * Callback for incoming voice calls.
  */
-function swsfdemo_twilio_voice_incoming($number, $options) {
-  watchdog('in', $number);
-  watchdog('in', print_r($options, TRUE));
+function swsfdemo_twilio_voice_incoming($voice, $options) {
+  watchdog('indemo', 'd');
+
+  //watchdog('in', $voice);
+  //watchdog('in', print_r($options, TRUE));
 }
